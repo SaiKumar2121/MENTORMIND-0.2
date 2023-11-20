@@ -7,7 +7,7 @@ import About from '../Components/AboutSection/About'
 
 const Home = () => {
   return (
-    <div className='bg-color'>
+    <div className='bg-color'  style={{ backgroundColor: 'black', height: '100vh', width: '100vw' }}>
         <Hero/>
         <Benfits/>
         <AllContent/>
