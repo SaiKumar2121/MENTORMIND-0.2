@@ -6,7 +6,7 @@ import Home from './Pages/Home'
 
 const App = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: 'black', height: '100vh', width: '100vw' }}>
       
        <BrowserRouter>
        <Navbar/>
