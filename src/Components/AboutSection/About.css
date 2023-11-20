@@ -1,0 +1,49 @@
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 527px;
+    margin-top: 20px;
+    
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding:90px;
+    
+    color: white;
+    
+}
+.heading-about{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.sub-container{
+    height: 140px;
+    width: 710px;
+}
+.span-class{
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.title{
+    font-size: 32px;
+    font-weight: 400;
+}
+.subtitle{
+    font-size: 14px;
+    font-weight: 300;
+}
+.right-container{
+    margin-right: 40px;
+    height: 506px;
+    width: 684px;
+    
+
+}
+.right-container img{
+    height: 450px;
+    padding-right: 20px;
+}
