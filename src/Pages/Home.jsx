@@ -4,14 +4,17 @@ import './PagesCss/Home.css'
 import { Benfits } from '../Components/Benfits/Benfits'
 import AllContent from '../Components/AllContent/AllContent'
 import About from '../Components/AboutSection/About'
+import Roadmap from '../Components/Roadmap/Roadmap'
 
 const Home = () => {
   return (
-    <div className='bg-color'  style={{ backgroundColor: 'black', height: '100vh', width: '100vw' }}>
+    <div>
         <Hero/>
         <Benfits/>
         <AllContent/>
         <About/>
+        <Roadmap/>
+
     </div>
   )
 }

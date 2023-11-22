@@ -1,3 +1,12 @@
+body, #root {
+  background-color: black; /* This sets the background color to black */
+  margin: 0; /* This removes any default margins that might add white space */
+  padding: 0; /* This removes any default padding */
+  height: 100%; 
+  overflow-x: hidden;
+  width:100%; /* This ensures the black background covers the entire viewport width */
+}
+
 .App {
   text-align: center;
 }
