@@ -40,6 +40,8 @@
     .footer .row ul li{
     display:inline-block;
     margin:0px 30px;
+    font-size: 19px;
+
     }
     
     .footer .row a i{
@@ -55,6 +57,7 @@
     .footer .row ul li{
     display:block;
     margin:10px 0px;
+    
     text-align:left;
     }
     .footer .row a i{

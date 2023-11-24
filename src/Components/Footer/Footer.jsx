@@ -25,7 +25,7 @@ const Footer = () => {
             Contact us
           </li>
           <li>
-            Our Services
+            About us
           </li>
           <li>
             Privacy Policy
@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       <div className="row">
-        INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh
+        Mentormind Copyright © 2023 Mentormind - All rights reserved || Designed By: Rishi
       </div>
     </div>
   );

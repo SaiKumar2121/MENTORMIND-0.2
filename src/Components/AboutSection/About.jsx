@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'
-import about_img from '../Assets/Drawkit-Illustrations-Education-1-10 1.png';
+import about_img from '../Assets/kindpng_41492.png';
 const About = () => {
   return (
     <div className="about-container">
