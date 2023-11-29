@@ -1,0 +1,39 @@
+.item{
+    width: 250px;
+
+}
+.item p{
+    margin: 6px 0px; 
+    color: white;
+}
+.item img{
+    border-radius: 30px;
+    height: 250px;
+    width: 240px;
+    cursor: pointer;
+}
+
+.free-paid{
+    display: flex;
+    gap: 30px;
+}
+.free{
+    color: #00C0C0;;
+    font-size: 18px;
+    font-weight: 600;
+}
+.paid{
+    color: #b40a0ac7;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item :hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+.item-details{
+    text-align: center;
+    gap: 20px;
+}

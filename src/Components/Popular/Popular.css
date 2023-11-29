@@ -1,0 +1,31 @@
+.popular-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+ margin-top: 80px;
+  
+}
+
+.popular-container h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.popular-container p{
+  color:aquamarine;
+  font-size: 18px;
+  font-weight: 200px;
+}
+.popular-container hr{
+  width: 500px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #252525;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+}

@@ -1,62 +1,56 @@
+.main-heading {
+  font-size: 36px; /* Match this size to your design */
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0; /* Adjust this value as needed */
+  color: white; /* Match this color to your design */
+}
+
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-template-rows: repeat(2, auto);
-  gap: 20px; 
-  padding: 0 20px;
-  background-color: black;
-  justify-content: center;
-  margin-top: 30px; 
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Space between items */
+  padding: 20px; /* Padding around the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+  max-width: 1200px; /* Maximum width of the grid */
 }
 
 .feature {
-  background-color: #333; 
-  padding: 10px 20px;
- 
-  /*box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5); */
-  box-shadow: 0px 4px 10px rgba(0, 192, 192, 0.5);
-  border-radius: 18px; /* Optional: rounds the corners of the boxes */
-  transition: box-shadow 0.3s ease-in-out;
-  cursor: pointer; /* Adjust shadow to match your image */
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside each feature box */
+  text-align: center; /* Center the text */
+  
 }
-
 .feature:hover {
   /* box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);*/
   box-shadow: 0px 0px 15px #00C0C0;
   
 }
 
-.feature-title{
+.feature-title {
   color: #00C0C0;
- 
-}
-.feature-description{
-  color: #FFFFFF;
-  font-weight:200;
-  
+  font-size: 20px; /* Title font size */
+  font-weight: 600; /* Title font weight */
+  margin-bottom: 15px; /* Space below the title */
 }
 
-/* Target the 4th and 5th items and make them take up one-third of the space */
-.feature:nth-child(4), .feature:nth-child(5) {
-  grid-column: span 1;
+.feature-description {
+  font-size: 16px; /* Description font size */
+  color: #666; /* Description text color */
+  line-height: 1.6;
+  font-weight: 400; /* Line height for readability */
 }
 
-/* Adjust the starting position of the 4th item if there are exactly 5 items */
-.features-grid:only-child:nth-child(4) {
-  grid-column-start: 2;
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+  }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .features-grid {
-    grid-template-columns: 1fr; /* Stack them on smaller screens */
-  }
-
-  .feature:nth-child(4), .feature:nth-child(5) {
-    grid-column: auto;
-  }
-
-  .features-grid:only-child:nth-child(4) {
-    grid-column-start: auto;
+    grid-template-columns: 1fr; /* 1 item per row on small screens */
   }
 }
