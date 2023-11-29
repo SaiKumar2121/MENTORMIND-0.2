@@ -11,12 +11,12 @@ const Hero = () => {
           Build and Create Dreams
           </div>
           <div className='para'>
-          Together with Innovate Learn Nexus
+          Together with MentorMind
           </div>
           <div className='description'>
-          Innovate Learn Nexus captures the essence of innovation in education and technology
+          MentorMind captures the essence of innovation in education and technology
           while emphasizing the transformative nature of your resources. It also highlights the 
-          concepts of access, navigation, and the convergence of learning and innovation.
+          concepts of access, navigation, and the convergence of learning and innovation.
           </div>
           <button className='button-class'>
           View Categories
