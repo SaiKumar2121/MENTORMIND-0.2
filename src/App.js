@@ -8,7 +8,8 @@ import FAQ from './Pages/FQA'
 import AllCourses from './Pages/AllCourses'
 import Blog from './Pages/Blog'
 import Footer from './Components/Footer/Footer'
-import CourseDeatils from './Pages/CourseDeatils'
+import CourseDetails from './Components/CourseDetails/CourseDetails'
+
 
 
 const App = () => {
@@ -19,8 +20,9 @@ const App = () => {
        <Navbar/>
        <Routes>
         <Route path='/' element = {<Home/>}/>
-        <Route path='/Category' element={<Category/>}/> 
-        <Route path='/Category/CourseDeatils' element={<CourseDeatils/>}/>
+        <Route path="/Category/*" element={<Category />} />
+        <Route path='/course/:id' element={<CourseDetails />} />
+        
         <Route path='/Allcourse' element={<AllCourses/>}/> 
         <Route path='/FQA' element={<FAQ/>}/> 
         <Route path='/Blog' element={<Blog/>}/> 

@@ -1,15 +1,17 @@
+// Category.js
 import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Categorybanner from '../Components/Categorybanner/Categorybanner';
 import CategorySearch from '../Components/CategorySearch/CategorySearch';
 import SearchCard from '../Components/SearchCard/SearchCard';
-import Courses_list from '../Components/Assets/SearchCourse'; // Path to your course data
+import CourseDetails from '../Components/CourseDetails/CourseDetails';
+import CourseSearch from '../Components/Assets/SearchCourse';
 
 const Category = () => {
   const [filteredCourses, setFilteredCourses] = useState([]);
 
-  // Function to get 3 random courses
   const getRandomCourses = () => {
-    const shuffled = [...Courses_list].sort(() => 0.5 - Math.random());
+    const shuffled = [...CourseSearch].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 3);
   };
 
@@ -19,22 +21,27 @@ const Category = () => {
 
   const handleSearch = (searchTerm) => {
     if (searchTerm) {
-      const filtered = Courses_list.filter(course => 
+      const filtered = CourseSearch.filter((course) =>
         course.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredCourses(filtered);
     } else {
-      setFilteredCourses(getRandomCourses()); // Show random courses when search is cleared
+      setFilteredCourses(getRandomCourses());
     }
   };
 
   return (
     <div>
-        <Categorybanner />
-        <CategorySearch onSearch={handleSearch} />
-        <SearchCard courses={filteredCourses} />
+      <Categorybanner />
+      <CategorySearch onSearch={handleSearch} />
+      <Routes>
+        <Route path='/course/:id' element={<CourseDetails />} />
+        <Route path='/' element={<SearchCard courses={filteredCourses} />} />
+      </Routes>
     </div>
   );
 };
 
 export default Category;
+
+

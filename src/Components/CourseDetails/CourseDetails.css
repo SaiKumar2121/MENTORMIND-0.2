@@ -1,0 +1,35 @@
+/* CourseDetails.css */
+
+.course-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .link-class{
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Add more styling as needed */
+  
