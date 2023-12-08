@@ -7,9 +7,9 @@ const About = () => {
     <div className="text-container">
       <h2 className="heading-about">About Us</h2> 
       <div className='sub-container'> 
-      <h1 className="title"><span className='span-class'>Innovate Learn Nexus</span> is a Free E-Resource Provider To Help You Grow</h1>
+      <h1 className="title"><span className='span-class'>MentorMind</span> is a Free E-Resource Provider To Help You Grow</h1>
       </div>
-      <p className="subtitle">It is hoped that Innovate Learn Nexus can become a useful service in the future in the field of education</p>
+      <p className="subtitle">It is hoped that MentorMind can become a useful service in the future in the field of education</p>
     </div>
     <div className="right-container">
       <img src={about_img} alt="" />

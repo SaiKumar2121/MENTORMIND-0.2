@@ -13,7 +13,7 @@ const Items = (props) => {
 
           </div>
           <div className='paid'>
-            {props.price}
+          ₹{props.price}
 
           </div>
             
