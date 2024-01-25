@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Items.css';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './Items.css'
 
 const Items = (props) => {
   return (
     <div className='item'>
       <Link to={`/course/${props.id}`} className='link-class'>
-        <img src={props.image} alt="" />
+        <img src={props.image} alt='img_loading' />
         <p>{props.name}</p>
         <div className='free-paid'>
           <div className='free'>{props.free}</div>
@@ -14,7 +14,7 @@ const Items = (props) => {
         </div>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Items;
+export default Items

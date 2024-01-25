@@ -1,8 +1,7 @@
 import React from 'react'
-import './Popular.css';
+import './Popular.css'
 import popular_details from '../Assets/popular'
-import Items from '../Items/Items';
-
+import Items from '../Items/Items'
 
 const Popular = () => {
   return (
@@ -11,19 +10,15 @@ const Popular = () => {
       <hr />
       <p>Unlock Opportunities with Popular Courses Across AI, IT, Mearketing, and Diverse Domains.</p>
       <div className='cards'>
-        
-          {popular_details.map((item,i)=>{
-            return <Items key ={i} id = {item.id} name = {item.name} image = {item.image} free = {item.free} price={item.price} />
-          })}
 
-        
+        {popular_details.map((item, i) => {
+          return <Items key={i} id={item.id} name={item.name} image={item.image} free={item.free} price={item.price} />
+        })}
 
       </div>
-     
 
     </div>
-  
-    
+
   )
 }
 

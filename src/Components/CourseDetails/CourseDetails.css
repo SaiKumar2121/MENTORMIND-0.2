@@ -1,35 +1,110 @@
-/* CourseDetails.css */
-
 .course-details-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+  max-width: 900px;
+  margin: 30px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.course-content {
+  flex-basis: 60%;
+  padding-right: 20px;
+}
+
+.course-title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.course-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.course-description,
+.course-roadmap {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.course-meta {
+  flex-basis: 40%;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.course-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4CAF50; /* Green color to match the theme */
+}
+
+.course-rating,
+.course-enrollment,
+.course-duration {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.course-rating img,
+.course-enrollment img,
+.course-duration img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.start-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%; /* Makes the button full width */
+}
+
+.start-button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .course-details-container {
+    flex-direction: column;
+  }
+
+  .course-meta {
+    width: 100%;
+    margin-top: 20px;
     border-radius: 8px;
-    background-color: #fff;
   }
-  
-  h2 {
-    margin-bottom: 20px;
-    color: #333;
+
+  .course-content,
+  .course-meta {
+    flex-basis: auto;
   }
-  .link-class{
-    text-decoration: none;
+
+  .start-button {
+    width: auto; /* Revert button width for mobile */
   }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  p {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  /* Add more styling as needed */
-  
+}

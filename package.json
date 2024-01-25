@@ -19,9 +19,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "standard --plugin react '**/*.js' '**/*.jsx'",
+    "lint:fix": "standard --fix",
+    "lint": "standard",
+    "lint-watch": "nodemon --ext js,jsx --exec 'npm run lint'"
   },
-  "eslintConfig": {
+  "eslintConfig": { 
     "extends": [
       "react-app",
       "react-app/jest"
@@ -38,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "nodemon": "^3.0.3",
+    "standard": "^17.1.0"
   }
 }

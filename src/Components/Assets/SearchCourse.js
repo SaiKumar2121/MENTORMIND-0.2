@@ -1,14 +1,14 @@
-import python_beginner from '../Assets/python_beginner.png';
-import python_core from '../Assets/oop--2-.png';
-import python_end_to_end from '../Assets/python_end_end.jpg';
-import node_beginner from '../Assets/Node.js-Tutorial.jpeg';
-import node_core from '../Assets/core-concepts-nodejs.png';
-import node_end_to_end from '../Assets/Best-Way-to-Learn-NodeJS-A-Complete-Roadmap.png';
-import react_begginer from '../Assets/react-about.161b6954402b99bc8101.jpg';
-import react_core from '../Assets/react-js.webp';
-import react_end_to_end from '../Assets/react-end.png';
+import python_beginner from '../Assets/python_beginner.png'
+import python_core from '../Assets/oop--2-.png'
+import python_end_to_end from '../Assets/python_end_end.jpg'
+import node_beginner from '../Assets/Node.js-Tutorial.jpeg'
+import node_core from '../Assets/core-concepts-nodejs.png'
+import node_end_to_end from '../Assets/Best-Way-to-Learn-NodeJS-A-Complete-Roadmap.png'
+import react_begginer from '../Assets/react-about.161b6954402b99bc8101.jpg'
+import react_core from '../Assets/react-js.webp'
+import react_end_to_end from '../Assets/react-end.png'
 
-let CourseSearch = [
+const CourseSearch = [
   {
     id: 1,
     name: 'Python for beginners',
@@ -20,6 +20,8 @@ let CourseSearch = [
     reviews: 4.5,
     totalStudents: 1000,
     totalHours: 40,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+
   },
   {
     id: 2,
@@ -32,6 +34,7 @@ let CourseSearch = [
     reviews: 4.8,
     totalStudents: 1200,
     totalHours: 45,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 3,
@@ -44,6 +47,7 @@ let CourseSearch = [
     reviews: 4.7,
     totalStudents: 1500,
     totalHours: 50,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 4,
@@ -56,6 +60,7 @@ let CourseSearch = [
     reviews: 4.2,
     totalStudents: 800,
     totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 5,
@@ -68,6 +73,7 @@ let CourseSearch = [
     reviews: 4.6,
     totalStudents: 1000,
     totalHours: 42,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 6,
@@ -80,6 +86,7 @@ let CourseSearch = [
     reviews: 4.9,
     totalStudents: 2000,
     totalHours: 55,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 7,
@@ -92,6 +99,7 @@ let CourseSearch = [
     reviews: 4.3,
     totalStudents: 900,
     totalHours: 38,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 8,
@@ -104,6 +112,7 @@ let CourseSearch = [
     reviews: 4.7,
     totalStudents: 1100,
     totalHours: 47,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
   {
     id: 9,
@@ -116,7 +125,86 @@ let CourseSearch = [
     reviews: 4.8,
     totalStudents: 1300,
     totalHours: 52,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
   },
-];
+  {
+    id: 10,
+    name: 'Machine-Learning',
+    image: '',
+    price: 399,
+    free: 'Free',
+    description: '',
+    roadmap: '',
+    reviews: 4.2,
+    totalStudents: 800,
+    totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+  },
+  {
+    id: 11,
+    name: 'Digital Marketing',
+    image: '',
+    price: 399,
+    free: 'Free',
+    description: '',
+    roadmap: '',
+    reviews: 4.2,
+    totalStudents: 800,
+    totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+  },
+  {
+    id: 12,
+    name: 'DBMS',
+    image: '',
+    price: 399,
+    free: 'Free',
+    description: '',
+    roadmap: '',
+    reviews: 4.2,
+    totalStudents: 800,
+    totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+  },
+  {
+    id: 13,
+    name: 'JavaScript end to end',
+    image: '',
+    price: 399,
+    free: 'Free',
+    description: '',
+    roadmap: '',
+    reviews: 4.2,
+    totalStudents: 800,
+    totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+  },
+  {
+    id: 14,
+    name: 'Content Writing',
+    image: '',
+    price: 399,
+    free: 'Free',
+    description: '',
+    roadmap: '',
+    reviews: 4.2,
+    totalStudents: 800,
+    totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+  },
+  {
+    id: 15,
+    name: 'My SQL',
+    image: '',
+    price: 399,
+    free: 'Free',
+    description: '',
+    roadmap: '',
+    reviews: 4.2,
+    totalStudents: 800,
+    totalHours: 35,
+    videoUrl: 'https://www.youtube.com/watch?v=hEgO047GxaQ&t=1s'
+  }
+]
 
-export default CourseSearch;
+export default CourseSearch

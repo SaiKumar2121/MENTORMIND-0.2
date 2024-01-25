@@ -1,5 +1,5 @@
-import React from 'react';
-import Items from '../Items/Items';
+import React from 'react'
+import Items from '../Items/Items'
 import './SearchCard.css'
 
 const SearchCard = ({ courses }) => {
@@ -7,7 +7,7 @@ const SearchCard = ({ courses }) => {
     <div className='main-card-container'>
       <div className='card'>
         {courses.map((item, i) => (
-          <Items 
+          <Items
             key={i}
             id={item.id}
             name={item.name}
@@ -18,7 +18,7 @@ const SearchCard = ({ courses }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SearchCard;
+export default SearchCard

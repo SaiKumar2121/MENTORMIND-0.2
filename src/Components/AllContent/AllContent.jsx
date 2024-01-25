@@ -1,5 +1,5 @@
-import React from 'react';
-import './AllContent.css';
+import React from 'react'
+import './AllContent.css'
 
 const features = [
   { id: 1, title: 'Free Courses', description: 'We provide several free courses to support the availability of education for underprivileged communities.' },
@@ -9,17 +9,17 @@ const features = [
   { id: 5, title: 'Personalized Learning Paths', description: 'Our platform offers personalized learning paths tailored to your individual pace and style, ensuring a unique and effective learning experience.' },
   { id: 6, title: 'Top OutComes', description: 'We present the top 5 courses available on the internet, offering accurate and comprehensive content.' }
   // Add more benefits here
-];
+]
 
 const AllContent = () => {
   return (
     <div>
-      <h1 className="main-heading">Benefits of joining in MentorMind</h1>
-      <div className="features-grid">
+      <h1 className='main-heading'>Benefits of joining in MentorMind</h1>
+      <div className='features-grid'>
         {features.map((feature) => (
-          <div key={feature.id} className="feature">
-            <h2 className="feature-title">{feature.title}</h2>
-            <p className="feature-description">{feature.description}</p>
+          <div key={feature.id} className='feature'>
+            <h2 className='feature-title'>{feature.title}</h2>
+            <p className='feature-description'>{feature.description}</p>
           </div>
         ))}
       </div>
@@ -27,4 +27,4 @@ const AllContent = () => {
   )
 }
 
-export default AllContent;
+export default AllContent

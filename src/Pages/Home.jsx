@@ -10,12 +10,11 @@ import AllContent from '../Components/AllContent/AllContent'
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <AllContent/>
-        <Popular/>
-        <Roadmap/>
-        <About/>
-        
+      <Hero />
+      <AllContent />
+      <Popular />
+      <Roadmap />
+      <About />
 
     </div>
   )
