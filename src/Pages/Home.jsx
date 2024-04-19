@@ -1,11 +1,11 @@
-import React from 'react'
-import Hero from '../Components/Hero/Hero'
-import './PagesCss/Home.css'
+import React from 'react';
+import Hero from '../Components/Hero/Hero';
+import './PagesCss/Home.css';
 
-import About from '../Components/AboutSection/About'
-import Roadmap from '../Components/Roadmap/Roadmap'
-import Popular from '../Components/Popular/Popular'
-import AllContent from '../Components/AllContent/AllContent'
+import About from '../Components/AboutSection/About';
+import Roadmap from '../Components/Roadmap/Roadmap';
+import Popular from '../Components/Popular/Popular';
+import AllContent from '../Components/AllContent/AllContent';
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <About />
 
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -12,6 +12,8 @@ const Navbar = () => {
     navigate('/home')
   }
 
+
+
   return (
     <div className='navbar'>
       <div className='nav-logo'>
@@ -28,7 +30,7 @@ const Navbar = () => {
 
       </ul>
       <div className='nav-login-btn'>
-        <button>Login</button>
+        <Link to ='/login' style={{textDecoration: 'none', color: 'white'}}>Login</Link>
 
       </div>
     </div>

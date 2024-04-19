@@ -7,6 +7,12 @@ import node_end_to_end from '../Assets/Best-Way-to-Learn-NodeJS-A-Complete-Roadm
 import react_begginer from '../Assets/react-about.161b6954402b99bc8101.jpg'
 import react_core from '../Assets/react-js.webp'
 import react_end_to_end from '../Assets/react-end.png'
+import contentWritting from '../Assets/contentwritting.jpg'
+import mysql from '../Assets/mysql.jpg'
+import DBMS from '../Assets/DBMS.jpg'
+import machinelearning from '../Assets/machineLearning.jpg'
+import digitalmarketing from '../Assets/digital-marketing.jpg' 
+import javascript from '../Assets/javascript.jpg'
 
 const CourseSearch = [
   {
@@ -130,7 +136,7 @@ const CourseSearch = [
   {
     id: 10,
     name: 'Machine-Learning',
-    image: '',
+    image: machinelearning,
     price: 399,
     free: 'Free',
     description: '',
@@ -143,7 +149,7 @@ const CourseSearch = [
   {
     id: 11,
     name: 'Digital Marketing',
-    image: '',
+    image: digitalmarketing,
     price: 399,
     free: 'Free',
     description: '',
@@ -156,7 +162,7 @@ const CourseSearch = [
   {
     id: 12,
     name: 'DBMS',
-    image: '',
+    image: DBMS,
     price: 399,
     free: 'Free',
     description: '',
@@ -169,7 +175,7 @@ const CourseSearch = [
   {
     id: 13,
     name: 'JavaScript end to end',
-    image: '',
+    image: javascript,
     price: 399,
     free: 'Free',
     description: '',
@@ -182,7 +188,7 @@ const CourseSearch = [
   {
     id: 14,
     name: 'Content Writing',
-    image: '',
+    image: contentWritting,
     price: 399,
     free: 'Free',
     description: '',
@@ -195,7 +201,7 @@ const CourseSearch = [
   {
     id: 15,
     name: 'My SQL',
-    image: '',
+    image: mysql,
     price: 399,
     free: 'Free',
     description: '',
